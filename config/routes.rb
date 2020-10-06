@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get '/', to: 'home#index'
   get '/shelters', to: 'shelters#index'
   get '/shelters/new', to: 'shelters#new'
-  get '/shelters', to: 'shelters#create'
+  post '/shelters', to: 'shelters#create'
   get '/shelters/:id', to: 'shelters#show'
 end
