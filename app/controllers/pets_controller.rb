@@ -3,4 +3,11 @@ class PetsController < ApplicationController
     @pets = Pet.all
   end
 
+  def new
+  end
+
+  def show
+    @pets = Pet.find(params[:id])
+  end
+
 end
