@@ -1,3 +1,3 @@
 class Pet < ApplicationRecord
-
-end 
+  belongs_to :shelter
+end

@@ -7,6 +7,9 @@
 <p><%= @shelter.state %></p>
 <p><%= @shelter.zip %></p>
 
+<form action="/shelters/<%= @shelter.id %>/pets">
+  <input type="submit" value="See Pets">
+</form>
 
 <form action="/shelters/<%= @shelter.id %>/edit">
   <input type="submit" value="Update Shelter">
