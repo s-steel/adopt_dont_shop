@@ -1,0 +1,13 @@
+<h1>Pets:</h1>
+
+<% @pets.each do |pet| %>
+  <h3><a href="/pets/<%= pet.id %>"><%= pet.image %></a></h3>
+  <p><%= pet.name %><br>
+     <%= pet.approximate_age %><br>
+     <%= pet.sex %><br>
+     <%= pet.shelter_where_located %></p>
+<% end %>
+
+<form action="/pets/new">
+  <input type="submit" value="Add A New Pet">
+</form>
