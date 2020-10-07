@@ -5,4 +5,6 @@
   <p><%= shelter.city %>, <%= shelter.state %></p>
 <% end %>
 
-<a href="/shelters/new">Add A New Shelter</a>
+<form action="/shelters/new">
+  <input type="submit" value="Add A New Shelter">
+</form>
