@@ -1,3 +1,9 @@
-<form action="/shelters/<%= @shelter.id %>">
-  <input type="submit" value="See Pets">
+<h1>Pets Available For Adoption:</h1>
+
+
+<p>Need:<br>
+  image, name, approx age, sex</p>
+
+<form action="/shelters/<%= @shelter.id %>/pets/new">
+  <input type="submit" value="Create Pet">
 </form>
