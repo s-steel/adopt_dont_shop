@@ -1,16 +1,16 @@
+<h3>Add a New Pet:</h3>
 <form action="/shelters/<%= @shelter.id %>/pets" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <h3>Add a New Pet:</h3>
-  <label for='name'>Pets Name:</label><br>
+  <label for='pname'>Pets Name:</label><br>
   <input type='text' name='pet[name]'/><br/>
-  <label for='name'>Image:</label><br>
+  <label for='image'>Image:</label><br>
   <input type='text' name='pet[image]'/><br/>
-  <label for='name'>Description:</label><br>
+  <label for='description'>Description:</label><br>
   <input type='text' name='pet[description]'/><br/>
-  <label for='name'>Approximate Age:</label><br>
+  <label for='age'>Approximate Age:</label><br>
   <input type='text' name='pet[approximate_age]'/><br/>
-  <label for='name'>Sex:</label><br>
-  <select>
+  <label for='sex'>Sex:</label>
+  <select id='sex' name='sex'>
     <option value="male">Male</option>
     <option value="female">Female</option>
   </select><br>

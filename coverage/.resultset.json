@@ -254,8 +254,8 @@
           1,
           1,
           1,
-          1,
           null,
+          1,
           1,
           null,
           null,
@@ -268,6 +268,36 @@
       "/Users/seansteel/turing/mod2/adopt_dont_shop/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/spec/features/shelters/create_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -396,6 +426,26 @@
           null
         ]
       },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/shelter.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/seansteel/turing/mod2/adopt_dont_shop/app/controllers/shelters_controller.rb": {
         "lines": [
           1,
@@ -458,28 +508,8 @@
           1,
           null
         ]
-      },
-      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/shelter.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1602249840
+    "timestamp": 1602256199
   }
 }
