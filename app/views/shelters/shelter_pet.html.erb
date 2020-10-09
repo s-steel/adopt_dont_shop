@@ -1,7 +1,7 @@
 <h1>Pets Available For Adoption:</h1>
 
 <% @pets.each do |pet| %>
-  <img src=" <%= pet.image %>" style="width:50px;height:50px;">
+  <img src=" <%= pet.image %>" alt="doggo" style="width:100px;height:100px;">
   <h3><%= pet.name %></h3><br>
   <p>Approximate Age: <%= pet.approximate_age %><br>
   <p>Sex: <%= pet.sex %></p>
