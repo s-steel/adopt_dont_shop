@@ -13,11 +13,11 @@ describe "As a visitor" do
       expect(page).to have_button('Update Shelter')
       click_button('Update Shelter')
       expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
-      fill_in 'shelter[name]', with: 'Test Shelter 2'
-      fill_in 'shelter[address]', with: '654 North St'
-      fill_in 'shelter[city]', with: 'Pensacola'
-      fill_in 'shelter[state]', with: 'FL'
-      fill_in 'shelter[zip]', with: 90231
+      fill_in 'name', with: 'Test Shelter 2'
+      fill_in 'address', with: '654 North St'
+      fill_in 'city', with: 'Pensacola'
+      fill_in 'state', with: 'FL'
+      fill_in 'zip', with: 90231
 
       click_button('Update Shelter')
 
