@@ -5,7 +5,7 @@
   <p>Name: <%= pet.name %><br>
      Approximate Age: <%= pet.approximate_age %><br>
      Sex: <%= pet.sex %><br>
-     Shelter: <%= pet.shelter_id %></p>
+     Shelter: <%= Shelter.find(pet.shelter_id).name %></p>
 <% end %>
 
 
