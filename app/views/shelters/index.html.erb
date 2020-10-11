@@ -4,6 +4,9 @@
 <% @shelters.each do |shelter| %>
   <h3><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h3>
   <p><%= shelter.city %>, <%= shelter.state %></p>
+  <form action="/shelters/<%= shelter.id %>/edit">
+    <input type="submit" value="Update Shelter">
+  </form>
 <% end %>
 
 <form action="/shelters/new">
