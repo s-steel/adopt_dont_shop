@@ -17,14 +17,13 @@ describe "As a visitor" do
                          description: "good boy",
                          adoption_status: "Adoptable"
                          )
-      visit '/pets'
+      visit "/shelters/#{shelter_1.id}/pets"
 
-      expect(page).to have_content("Pets:")
+      expect(page).to have_content("1 Pet(s) Available")
       expect(page).to have_xpath("//img[contains(@src, '#{pet_1.image}')]")
       expect(page).to have_content("Test Pet 1")
       expect(page).to have_content("5")
       expect(page).to have_content("Female")
-      expect(page).to have_content("Test Shelter 1")
     end
   end
 end

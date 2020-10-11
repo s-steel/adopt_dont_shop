@@ -786,7 +786,6 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           null,
@@ -1010,11 +1009,32 @@
           null
         ]
       },
-      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/shelter.rb": {
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/spec/models/pet_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/pet.rb": {
         "lines": [
           1,
           1,
           null,
+          1,
           1,
           1,
           1,
@@ -1027,6 +1047,68 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/spec/models/shelter_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/shelter.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          9,
+          null,
           null
         ]
       },
@@ -1069,8 +1151,8 @@
           null,
           null,
           1,
-          7,
-          7,
+          8,
+          8,
           null,
           null,
           1,
@@ -1091,25 +1173,11 @@
           null
         ]
       },
-      "/Users/seansteel/turing/mod2/adopt_dont_shop/app/models/pet.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/seansteel/turing/mod2/adopt_dont_shop/app/controllers/pets_controller.rb": {
         "lines": [
           1,
           1,
-          14,
+          13,
           null,
           null,
           1,
@@ -1161,6 +1229,6 @@
         ]
       }
     },
-    "timestamp": 1602449334
+    "timestamp": 1602451711
   }
 }
