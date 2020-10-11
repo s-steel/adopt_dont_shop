@@ -51,3 +51,25 @@ describe "As a visitor" do
     expect(current_path).to eq("/pets")
   end
 end
+
+describe "As a visitor" do
+  it "every page on the site will have a link to shelters index page" do
+    shelter_1 = Shelter.create(name: "Test Shelter 1",
+                               address: "456 South St",
+                               city:  "Springfield",
+                               state:  "IL",
+                               zip:  35027
+                               )
+   pet_1 = shelter_1.pets.create(image: "test image",
+                      name: "Test Pet 1",
+                      approximate_age:  "5",
+                      sex:  "Female",
+                      description: "good boy",
+                      adoption_status: "Adoptable"
+                      )
+    visit "/pets/#{pet_1.id}"
+    expect(page).to have_link('See All Shelters')
+    click_link('See All Shelters')
+    expect(current_path).to eq("/shelters")
+  end
+end
