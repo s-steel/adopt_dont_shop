@@ -9,6 +9,11 @@
   <form action="/pets/<%= pet.id %>/edit">
     <input type="submit" value="Update Pet">
   </form>
+  <form action="/pets/<%= pet.id %>" method="POST">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete Pet"/>
+  </form>
 <% end %>
 
 <form action="/shelters/<%= @shelter.id %>/pets/new">
