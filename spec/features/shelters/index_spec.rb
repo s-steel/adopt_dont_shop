@@ -17,8 +17,6 @@ describe "As a visitor" do
                                  )
       visit '/shelters'
 
-      # save_and_open_page
-      # ^^adding this will open a page with what it looks like
       expect(page).to have_content("Shelters:")
       expect(page).to have_content("#{shelter_1.name}")
       expect(page).to have_content("#{shelter_2.name}")
@@ -67,7 +65,7 @@ describe "As a visitor" do
                                  zip:  35027
                                  )
       visit "/shelters"
-  
+
       expect(page).to have_button('Delete')
       click_button('Delete')
       expect(current_path).to eq("/shelters")

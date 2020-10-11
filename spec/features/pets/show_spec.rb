@@ -21,7 +21,7 @@ describe "As a visitor" do
       visit "/pets/#{pet_1.id}"
 
       expect(page).to have_content("Test Pet 1")
-      # expect(page).to have_content("test image")
+      expect(page).to have_xpath("//img[contains(@src, '#{pet_1.image}')]")
       expect(page).to have_content("good boy")
       expect(page).to have_content("5")
       expect(page).to have_content("Female")

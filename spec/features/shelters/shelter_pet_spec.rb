@@ -20,7 +20,7 @@ describe "As a visitor" do
       visit '/pets'
 
       expect(page).to have_content("Pets:")
-      # expect(page).to have_content("test image")
+      expect(page).to have_xpath("//img[contains(@src, '#{pet_1.image}')]")
       expect(page).to have_content("Test Pet 1")
       expect(page).to have_content("5")
       expect(page).to have_content("Female")
@@ -58,7 +58,7 @@ describe "As a visitor" do
       click_button('Update Pet')
       expect(current_path).to eq("/pets/#{pet_1.id}")
       expect(page).to have_content('Test dog 1')
-      # expect(page).to have_content('test image2')
+      expect(page).to have_xpath("//img[contains(@src, '#{pet_1.image}')]")
       expect(page).to have_content('3')
       expect(page).to have_content('Male')
       expect(page).to have_content('Adoptable')
