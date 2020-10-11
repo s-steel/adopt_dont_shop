@@ -6,6 +6,9 @@
   <h3><%= pet.name %></h3><br>
   <p>Approximate Age: <%= pet.approximate_age %><br>
   <p>Sex: <%= pet.sex %></p>
+  <form action="/pets/<%= pet.id %>/edit">
+    <input type="submit" value="Update Pet">
+  </form>
 <% end %>
 
 <form action="/shelters/<%= @shelter.id %>/pets/new">
