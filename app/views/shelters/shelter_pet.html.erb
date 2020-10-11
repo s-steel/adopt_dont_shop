@@ -1,6 +1,6 @@
 <a href="/shelters">See All Shelters</a><br>
 <%= link_to 'See All Pets', '/pets' %>
-<h1>Pets Available For Adoption:</h1>
+<h1><%= @shelter.pet_count %> Pet(s) Available</h1>
 
 <% @pets.each do |pet| %>
   <img src=" <%= pet.image %>" alt="doggo" style="width:100px;height:100px;">

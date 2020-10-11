@@ -21,7 +21,6 @@ describe "As a visitor" do
 
       click_button('Create Pet')
       expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
-      expect(page).to have_content("Pets Available For Adoption")
       expect(page).to have_content('Test dog 1')
       expect(page).to have_xpath("//img[contains(@src, 'test image')]")
       expect(page).to have_content('5')
