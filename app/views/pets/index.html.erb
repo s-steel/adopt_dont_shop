@@ -1,16 +1,19 @@
-<%= link_to 'Home', '/' %>
+<%= link_to 'Home', '/' %><br>
+<%= link_to 'See All Shelters', '/shelters' %>
 <h1>Pets:</h1>
 
 <% @pets.each do |pet| %>
-  <h3><a href="/pets/<%= pet.id %>"><img src="<%= pet.image %>"></a></h3>
-  <p>Name: <%= pet.name %><br>
+  <h3><img src="<%= pet.image %>"></h3>
+  <p>Name: <%= link_to pet.name, "/pets/#{pet.id}" %><br>
      Approximate Age: <%= pet.approximate_age %><br>
      Sex: <%= pet.sex %><br>
-     Shelter: <%= Shelter.find(pet.shelter_id).name %></p>
+     Shelter: <%= link_to Shelter.find(pet.shelter_id).name, "/shelters/#{pet.shelter_id}" %></p>
+     <form action="/pets/<%= pet.id %>/edit">
+       <input type="submit" value="Update Pet">
+     </form>
+     <form action="/pets/<%= pet.id %>" method="POST">
+         <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+         <input type="hidden" name="_method" value="DELETE">
+         <input type="submit" value="Delete Pet"/>
+     </form>
 <% end %>
-
-
-
-<form action="/pets/new">
-  <input type="submit" value="Might not need this">
-</form>
