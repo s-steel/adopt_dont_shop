@@ -6,7 +6,7 @@
   <p>Name: <%= pet.name %><br>
      Approximate Age: <%= pet.approximate_age %><br>
      Sex: <%= pet.sex %><br>
-     Shelter: <%= Shelter.find(pet.shelter_id).name %></p>
+     Shelter: <%= link_to Shelter.find(pet.shelter_id).name, "/shelters/#{pet.shelter_id}" %></p>
      <form action="/pets/<%= pet.id %>/edit">
        <input type="submit" value="Update Pet">
      </form>

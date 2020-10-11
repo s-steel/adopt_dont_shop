@@ -93,3 +93,27 @@ describe "As a visitor" do
     end
   end
 end
+
+describe "As a visitor" do
+  describe "anywhere on the site, if I see a shelter name" do
+    it "I can click it and be linked to its show page" do
+      shelter_1 = Shelter.create(name: "Test Shelter 1",
+                                 address: "456 South St",
+                                 city:  "Springfield",
+                                 state:  "IL",
+                                 zip:  35027
+                                 )
+     pet_1 = shelter_1.pets.create(image: "test image",
+                        name: "Test Pet 1",
+                        approximate_age:  "5",
+                        sex:  "Female",
+                        description: "good boy",
+                        adoption_status: "Adoptable"
+                        )
+      visit "/pets"
+      expect(page).to have_link('Test Shelter 1')
+      click_link('Test Shelter 1')
+      expect(current_path).to eq("/shelters/#{shelter_1.id}")
+    end
+  end
+end
