@@ -7,6 +7,9 @@
      Approximate Age: <%= pet.approximate_age %><br>
      Sex: <%= pet.sex %><br>
      Shelter: <%= Shelter.find(pet.shelter_id).name %></p>
+     <form action="/pets/<%= pet.id %>/edit">
+       <input type="submit" value="Update Pet">
+     </form>
 <% end %>
 
 
